@@ -23,7 +23,7 @@ int main()
     }
     if(str[i+1]=='\0')
     {
-        print(strt)
+        print(strt-1,i,str);
     }
         
 
