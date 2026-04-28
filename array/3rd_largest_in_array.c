@@ -3,15 +3,27 @@
 void a3rd_larggest(int *p)
 {
     int st=INT_MIN,nd=INT_MIN,rd=INT_MIN;
-    for(int i=0;i<sizeof(p);i++)
+    for(int i=0;i<5;i++)
     {
         if(p[i]>st)
         {
-            st=p[i];
-            nd=st;
             rd=nd;
+            nd=st;
+            st=p[i];
+        }
+        else if(p[i]!=st&&p[i]>nd)
+        {
+           
+            rd=nd;
+             nd=p[i];
+        }
+        else if(p[i]!=st&&p[i]!=nd&&p[i]>rd)
+        {
+            rd=p[i];
+        
         }
     }
+    printf("%d",rd);
     
 }
 int main()
@@ -22,5 +34,5 @@ int main()
         scanf("%d",&ptr[i]);
 
     }
-    a3rd_largest(ptr);
+    a3rd_larggest(ptr);
 }
