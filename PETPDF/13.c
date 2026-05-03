@@ -16,7 +16,7 @@ for(int i = 0;i<5;i++)
     for(int j=5-1;j>=0;j--)
     {
         printf("%d ",arr[j][i]);
-    }
+    } 
     printf("\n");
 }
 21 16 11 6 1 
