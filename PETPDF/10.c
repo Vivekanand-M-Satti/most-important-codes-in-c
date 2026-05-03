@@ -1,6 +1,6 @@
 //PASCALS BY USING THE 2D ARRAY
 #include <stdio.h>
-#if 0
+#if 1
 
 int main() {
     int n;
