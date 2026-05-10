@@ -1,3 +1,4 @@
+#if 0
 #include<stdio.h>
 int main()
 {
@@ -22,3 +23,5 @@ int main()
         printf("%d ",(sum>>i)&1);
     }
 }
+
+#endif
