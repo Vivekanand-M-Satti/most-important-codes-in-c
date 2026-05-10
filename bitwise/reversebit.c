@@ -23,5 +23,4 @@ int main()
         printf("%d ",(sum>>i)&1);
     }
 }
-
 #endif
