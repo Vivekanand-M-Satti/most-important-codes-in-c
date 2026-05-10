@@ -21,6 +21,8 @@ int main()
             else{
             printf("%d ",arr[j][i]);
             }
+        
         }
+        printf("\n");
     }
 }
