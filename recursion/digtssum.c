@@ -1,14 +1,17 @@
 #include<stdio.h>
-void sumofthefigit(int a,int sum)
+void sumofthefigit(int a)
+
 {
-    printf("%d",sum);
-    
+    if(a==-1)
+    return ;
+    sumofthefigit(a-1);
+    printf("%d",a);
 }
 int main()
 {
     int a;
     scanf("%d",&a);
     
-    sumofthefigit(a,0);
+    sumofthefigit(a);
     
 }
