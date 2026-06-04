@@ -1,17 +1,20 @@
 #include<stdio.h>
-void sumofthefigit(int a)
+void fibo(int a,int b,int c,int sum)
 
 {
-    if(a==-1)
-    return ;
-    sumofthefigit(a-1);
-    printf("%d",a);
+    if(c>=sum&&c<=-sum)
+    {
+    printf("%d ",c);
+    c=a-b;
+    fibo(b,c,c,sum);
+    }
+   
 }
 int main()
 {
     int a;
     scanf("%d",&a);
     
-    sumofthefigit(a);
+    fibo(1,0,0,a);
     
 }
